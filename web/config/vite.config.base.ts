@@ -6,7 +6,7 @@ import svgLoader from 'vite-svg-loader';
 import configArcoStyleImportPlugin from './plugin/arcoStyleImport';
 
 export default defineConfig({
-  base: '/lala-boot-web/',
+  base: '/',
   plugins: [
     vue(),
     vueJsx(),
@@ -50,7 +50,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 18080,
+    port: 7777,
     host: '0.0.0.0',
     open: false,
     hmr: true,

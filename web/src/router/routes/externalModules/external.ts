@@ -22,13 +22,13 @@ export default {
     {
       id: 61,
       parentId: 59,
-      path: 'https://jerry-up.gitee.io/blog',
+      path: 'https://jerry-up-blog.pages.dev',
       name: 'JerryUp',
       meta: {
-        locale: 'menu.jerryUp',
+        locale: 'menu.jerryUpBlog',
         requiresAuth: true,
         accessCodes: ['*'],
-        breadcrumb: ['menu.external', 'menu.jerryUp'],
+        breadcrumb: ['menu.external', 'menu.jerryUpBlog'],
       },
       children: null,
     },

@@ -1,6 +1,6 @@
 export default {
-  'login.form.title': '登录lala管理后台',
-  'login.form.sub.title': '基于Spring，Arco前后端基础样例',
+  'login.form.title': '登录lala-boot管理后台',
+  'login.form.sub.title': '基于SpringBoot，Arco前后端基础样例',
   'login.form.tenantName.placeholder': '集团名称：样例集团',
   'login.form.tenantName.errMsg': '集团名称不能为空',
   'login.form.loginName.placeholder': '用户名：admin',

@@ -311,6 +311,7 @@
   import { PaginationProps } from '@arco-design/web-vue/es/pagination';
   import { TableRowSelection } from '@arco-design/web-vue/es/table';
   import { arrayExchange, arrayActionInfo } from '@/utils/array';
+  import { isUndefined } from '@/utils/is';
   import { FormInstance } from '@arco-design/web-vue/es/form';
   import { Message } from '@arco-design/web-vue';
   import type { SelectOptionData } from '@arco-design/web-vue/es/select/interface';
@@ -353,7 +354,7 @@
     return {
       title: '',
       noticeType:
-        route.query?.noticeType === '0'
+        isUndefined(route.query?.noticeType) || route.query?.noticeType === '0'
           ? undefined
           : Number(route.query?.noticeType),
       sendTimeRang: [],

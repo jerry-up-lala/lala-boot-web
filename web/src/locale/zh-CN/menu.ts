@@ -45,5 +45,5 @@ export default {
   'menu.center.notice.info': '通知详情',
   'menu.external': '外部链接',
   'menu.arcoWebsite': 'Arco Design',
-  'menu.jerryUp': 'Jerry Up',
+  'menu.jerryUpBlog': 'Jerry Up Blog',
 };

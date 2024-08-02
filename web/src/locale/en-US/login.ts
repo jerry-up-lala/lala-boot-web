@@ -1,6 +1,7 @@
 export default {
-  'login.form.title': 'Login to lala background management',
-  'login.form.sub.title': 'Building based on Spring And Arco basic examples',
+  'login.form.title': 'Login to lala-boot background management',
+  'login.form.sub.title':
+    'Building based on SpringBoot And Arco basic examples',
   'login.form.tenantName.placeholder': 'Tenantname: 样例集团',
   'login.form.tenantName.errMsg': 'Tenantname cannot be empty',
   'login.form.loginName.placeholder': 'Username: admin',

@@ -45,5 +45,5 @@ export default {
   'menu.center.notice.info': 'User Notice Info',
   'menu.external': 'External Url',
   'menu.arcoWebsite': 'Arco Design',
-  'menu.jerryUp': 'Jerry Up',
+  'menu.jerryUpBlog': 'Jerry Up Blog',
 };

@@ -50,7 +50,7 @@
     {
       src: jerryup,
       srcDark: jerryupDrak,
-      url: 'https://jerry-up.gitee.io/blog',
+      url: 'https://jerry-up-blog.pages.dev',
       title: 'jerry-up',
     },
   ];

@@ -2,23 +2,23 @@
 <p align="center">
   <img width="100" src="./assets/logo.svg" style="text-align: center;">
 </p>
-<h1 align="center">jerry-up · lala · lala boot web</h1>
-<h4 align="center">基于 arco-design 的管理后台</h4>
+<h1 align="center">jerry-up · lala · lala-boot-web</h1>
+<h4 align="center">基于arco-design-vue的管理后台，lala-boot配套前端</h4>
 <p align="center">
-    <img alt="lala-boot-web" src="https://img.shields.io/badge/lala--boot--web-1.0.0-green">
+    <img alt="lala-boot-web" src="./assets/lala-boot-web-1.0.0-green.svg">
     <a href="./LICENSE" target="_blank">
-        <img alt="license" src="https://img.shields.io/badge/license-MIT-green">
+        <img alt="license" src="./assets/license-MIT-green.svg">
     </a>
 </p>
 <p align="center">
     <a href="https://www.npmjs.com/package/vite/v/3.2.5" target="_blank">
-        <img alt="vite" src="https://img.shields.io/badge/vite-3.2.5-blue?logo=vite">
+        <img alt="vite" src="./assets/vite-3.2.5-blue.svg">
     </a>
     <a href="https://www.npmjs.com/package/vue/v/3.2.40" target="_blank">
-        <img alt="vue" src="https://img.shields.io/badge/vue-3.2.40-blue?logo=vuedotjs">
+        <img alt="vue" src="./assets/vue-3.2.40-blue.svg">
     </a>
     <a href="https://www.npmjs.com/package/@arco-design/web-vue/v/2.54.5" target="_blank">
-        <img alt="arco-design/web-vue" src="https://img.shields.io/badge/arco--design%2Fweb--vue-2.54.5-blue?logo=bytedance">
+        <img alt="arco-design/web-vue" src="./assets/arco-design-web-vue-2.54.5-blue.svg">
     </a>
 </p>
 
@@ -27,7 +27,7 @@
 
 | 项目                                                   | 仓库地址                                            | 说明                     |
 | ------------------------------------------------------ | ------------------------ | ------------------------ |
-| lala-boot | [![lala-boot#gitee](https://img.shields.io/badge/gitee-snow?logo=Gitee&logoColor=crimson)](https://gitee.com/jerry_up_lala/lala-boot) [![lala-boot#github](https://img.shields.io/badge/github-snow?logo=Github&logoColor=black)](https://github.com/jerry-up-lala/lala-boot) | 配套服务端 |
+| lala-boot | [![lala-boot#gitee](./assets/gitee-snow.svg)](https://gitee.com/jerry_up_lala/lala-boot) [![lala-boot#github](./assets/github-snow.svg)](https://github.com/jerry-up-lala/lala-boot) | 配套服务端 |
 
 ## 2. 技术栈
 
@@ -87,6 +87,8 @@ lala-boot-web
     │  ├─package.json #依赖包配置
     │  ├─pnpm-lock.yaml #pnpm依赖锁
     │  └─tsconfig.json #ts配置
+    |-LICENSE #开源协议
+    └─README.md #项目说明
 ```
 
 ## 4. 本地开发
@@ -150,17 +152,17 @@ pnpm install
 
 ### 4.5. 启动
 
-> 运行 `pnpm run dev` 即可启动项目，访问 http://localhost:18080/lala-boot-web/。
+> 运行 `pnpm run dev` 即可启动项目，访问 http://localhost:7777。
 
-![pnpm run dev](./assets/image-20240701170442913.png)
+![image-20240731105544735](./assets/image-20240731105544735.png)
 
 ## 5. 部署
 
 ### 5.1. 修改路径
 
-> 根据部署路径，修改`config/vite.config.base.ts`的`base`配置。默认路径为`/lala-boot-web/`。
+> 根据部署路径，修改`config/vite.config.base.ts`的`base`配置。默认路径为`/`。
 
-![vite.config.base.ts](./assets/image-20240701164844513.png)
+![image-20240731111800424](./assets/image-20240731111800424.png)
 
 ### 5.2. 打包
 
@@ -171,15 +173,18 @@ pnpm install
 ### 5.3. 配置Nginx
 
 > :bulb: 由于路由模式使用`createWebHistory()` 创建的 HTML5 模式，Nginx配置时使用 try_files 重定向值`index.html`。
+>
+> ​	  暴露路径与`config/vite.config.base.ts`的`base`配置对应。
 
 ```nginx
-location /lala-boot-web {
-   alias /Users/jerry/code/gitee/jerry_up_lala/lala-boot-web/web/dist;
-   try_files $uri $uri/ /lala-boot-web/index.html;
+location / {
+	root /Users/jerry/code/gitee/jerry_up_lala/lala-boot-web/web/dist;
+	index index.html;
+	try_files $uri $uri/ /index.html;
 }
 ```
 
-![nginx配置](./assets/image-20240701164921580.png)
+![image-20240731113010270](./assets/image-20240731113010270.png)
 
 ### 5.4. 访问页面
 

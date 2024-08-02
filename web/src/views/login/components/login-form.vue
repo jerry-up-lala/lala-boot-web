@@ -136,7 +136,7 @@
   const { changeLocale, currentLocale } = useLocale();
   const locales = [...LOCALE_OPTIONS];
 
-  const loginConfig = useStorage('jerry-up-lala-login-config', {
+  const loginConfig = useStorage('jerry-up-lala-boot-web-login-config', {
     rememberPassword: true,
     tenantName: '样例集团',
     loginName: 'tenant',

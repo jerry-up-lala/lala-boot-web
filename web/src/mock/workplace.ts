@@ -11,7 +11,7 @@ import {
 const statistic = Mock.mock({
   menu: 72,
   apiCount: '@integer(150, 200)',
-  apiDoc: 'https://jerry-up-lala.apifox.cn',
+  apiDoc: 'https://jerry-up-lala-boot.apifox.cn',
   request: '@integer(200, 10000)',
   requestQoq: '@integer(-100, 0)',
 });

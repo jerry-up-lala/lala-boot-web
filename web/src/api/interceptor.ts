@@ -34,7 +34,7 @@ axios.interceptors.response.use(
     const res = response.data;
     if (res.error) {
       const { t } = i18n.global;
-      if (res.error.code === '100001') {
+      if (res.error.code === '100002' || res.error.code === '100003') {
         Modal.error({
           title: t('common.tip'),
           titleAlign: 'start',
