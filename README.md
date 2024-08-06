@@ -3,7 +3,7 @@
   <img width="100" src="./assets/logo.svg" style="text-align: center;">
 </p>
 <h1 align="center">jerry-up · lala · lala-boot-web</h1>
-<h4 align="center">基于arco-design-vue的管理后台，lala-boot配套前端</h4>
+<h4 align="center">基于vue3，UI组件库使用arco-design-vue的管理后台，lala-boot配套前端</h4>
 <p align="center">
     <img alt="lala-boot-web" src="./assets/lala-boot-web-1.0.0-green.svg">
     <a href="./LICENSE" target="_blank">
